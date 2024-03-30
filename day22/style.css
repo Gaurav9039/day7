@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url("alovera.jpg");
+    background-size:60%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-color: #b5dbe8;
+    clip-path: polygon(0% 0%,60% 0%,40% 100%,0% 100%);
+}
+#lnav{
+    height: 10%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    align-items: center;
+    padding-left: 50px;
+}
+#lnav a{
+    position: relative;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#lnav  #active::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#lnav i{
+    font-size: 40px;
+}
+#left #lmid{
+    position: absolute;
+    left: 8%;
+    top: 17%;
+    height: 300px;
+    width: 500px;
+    color: #ffffff;
+}
+#lmid h1{
+    font-size: 85px;
+}
+#lmid button{
+    margin-top: 50px;
+    padding: 15px 40px;
+    border: 3px solid white;
+    border-radius: 30px;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+ 
+}
+#lmid span i{
+    margin-left: 20px;
+}
+#right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./ggg.png");
+    background-size:39%;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-color: #ffdab9;
+    clip-path: polygon(60% 0%,100% 0%,100% 100%,40% 100%);
+    overflow: hidden;
+}
+#rnav{
+    padding-right: 40px;
+    height: 10%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    gap: 25px;
+
+}
+#rnav h4{
+    font-size: 20px;
+}
+#rnav i{
+    font-size: 30px;
+}
+#rmid{
+    position: absolute;
+    right: -10%;
+    top: 35%;
+    height: 300px;
+    width: 500px;
+    color: #181414;
+   
+}
+#rmid h1{
+    font-size: 100px;
+}
+#rmid button{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 15px 40px;
+    border: 3px solid white;
+    border-radius: 30px;
+    color: 181414;
+    background-color: transparent;
+    font-size: 15px;
+    background-color: white;
+ 
+}
+#rmid span i{
+    margin-left: 20px;
+}
